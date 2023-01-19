@@ -12,11 +12,3 @@ function setGradient() {
 color1.addEventListener("input", setGradient);
 
 color2.addEventListener("input", setGradient);
-
-const curriedAdd = (a) => (b) => (c) => a + b + c;
-
-const compose = (f, g) => (a) => f(g(a));
-
-const sum = (num) => num + 1;
-
-compose(sum, sum)(5);
